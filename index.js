@@ -1,5 +1,5 @@
 
-// TODO: Add sort, reduce, reduceRight, reverse
+// TODO: Add sort, reduce, reduceRight, reverse, flat, flatMap, fill
 // TODO: Fix splice
 const _ = {
   entries: require('./customEntries'),
