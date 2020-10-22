@@ -1,5 +1,5 @@
 
-// TODO: Add sort, reduce, reduceRight, 
+// TODO: Add sort, reduce, reduceRight, reverse
 // TODO: Fix splice
 const _ = {
   entries: require('./customEntries'),
@@ -20,6 +20,7 @@ const _ = {
   some: require('./customSome'),
   slice: require('./customSlice'),
   unshift: require('./customUnshift'),
+  values: require('./customValues'),
   removeAtIndex: require('./removeAtIndex')
 }
 
