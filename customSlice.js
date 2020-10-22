@@ -17,10 +17,10 @@
 // }
 
 const customSlice = function(arr, start, end) {
-  if (start > this.length) {
-    return this;
-  } else if (end > this.length) {
-    end = this.length;
+  if (start > arr.length) {
+    return arr;
+  } else if (end > arr.length) {
+    end = arr.length;
   }
 
   let newArr = [];
@@ -34,7 +34,7 @@ const customSlice = function(arr, start, end) {
   return newArr;
 }
 
-
+module.exports = customSlice;
 
 const testFunc = function() {
   let arr =  [1, 2, 3, 4 , 5]
