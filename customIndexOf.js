@@ -2,7 +2,7 @@ const checkIfArray = require("./helpers/checkIfArray");
 
 const customFindIndex = function(arr, value, startIndex = 0) {
   checkIfArray(arr);
-  git
+  
   if (!arr.length 
     || startIndex >= arr.length
     || typeof value !== 'string') {

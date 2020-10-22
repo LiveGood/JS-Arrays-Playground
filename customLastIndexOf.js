@@ -29,9 +29,4 @@ const customLastIndexOf = function(arr, value, startIndex = 0) {
   else return -1
 }
 
-const animals = ['Dodo', 'Tiger', 'Penguin', 'Dodo', 'Dodo'];
-
-console.log(animals.lastIndexOf('Dodo'));
-console.log(customLastIndexOf(animals, 'Dodo'));
-
 module.exports = customLastIndexOf
