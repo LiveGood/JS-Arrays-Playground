@@ -10,7 +10,7 @@
 //   this.length = this.length - 1;
 // }
 
-module.export = function removeAtIndex(arr, index, makeShorter) {
+module.exports = function removeAtIndex(arr, index, makeShorter) {
   if (!makeShorter) {
     arr[index] = undefined;
     return;

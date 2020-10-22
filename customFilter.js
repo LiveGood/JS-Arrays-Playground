@@ -1,16 +1,7 @@
-// Array.prototype.customFilter = function(callback) {
-//   let newArr = [];
-
-//   for (let i = 0; i < this.length; i++) {
-//     if (callback(this[i], i)) {
-//       newArr.push(this[i])
-//     } 
-//   }
-
-//   return newArr;
-// }
+const contextProvider = require("./helpers/contextProvider");
 
 const customFilter = function(arr, cb, thisArg) {
+  cb = contextProvider(arr, cb, thisArg)
   let newArr = [];
 
   for (let i = 0; i < arr.length; i++) {
@@ -33,3 +24,15 @@ function testFunc() {
   console.log(areArraysEqual(jsFilteredArray, customFilteredArray));
 }
 // testFunc()
+
+// Array.prototype.customFilter = function(callback) {
+//   let newArr = [];
+
+//   for (let i = 0; i < this.length; i++) {
+//     if (callback(this[i], i)) {
+//       newArr.push(this[i])
+//     } 
+//   }
+
+//   return newArr;
+// }
