@@ -1,12 +1,11 @@
-// Array.prototype.customPop = function() {
-//   const result = this[this.length-1]
-//   this.length = this.length - 1;
-//   return result;
-// }
+const checkIfArray = require("./helpers/checkIfArray");
 
-module.exports = function customPop(arr) {
+const customPop = function(arr) {
+  checkIfArray(arr)
+
   const result = arr[arr.length-1]
   arr.length = arr.length - 1;
   return result;
 }
 
+module.exports = customPop;

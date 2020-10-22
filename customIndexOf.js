@@ -27,4 +27,4 @@ const customFindIndex = function(arr, value, startIndex = 0) {
   return -1; 
 }
 
-module.exports = customFindIndex
+module.exports = customFindIndex;

@@ -1,16 +1,8 @@
-// Array.prototype.removeAtIndex = function(index, makeShorter) {
-//   if (!makeShorter) {
-//     this[index] = undefined;
-//     return;
-//   }
+const checkIfArray = require("./helpers/checkIfArray");
 
-//   for(let i = index; i < this.length; i++) {
-//     this[i] = this[i+1];
-//   }
-//   this.length = this.length - 1;
-// }
-
-module.exports = function removeAtIndex(arr, index, makeShorter) {
+const removeAtIndex = function(arr, index, makeShorter) {
+  checkIfArray(arr)
+  
   if (!makeShorter) {
     arr[index] = undefined;
     return;
@@ -21,3 +13,5 @@ module.exports = function removeAtIndex(arr, index, makeShorter) {
   }
   arr.length = arr.length - 1;
 }
+
+module.exports = removeAtIndex; 

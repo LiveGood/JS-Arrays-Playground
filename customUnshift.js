@@ -1,18 +1,8 @@
-// Array.prototype.customUnshift = function(value) {
-//   if (!this.length) {
-//     this[0] = value;
-//     return 1;
-//   }
-  
-//   this.length = this.length + 1;
-//   for (let i = this.length - 1; i >= 0; i--) {
-//     this[i] = this[i - 1]
-//   }
-//   this[0] = value;
-//   return this.length;
-// }
+const checkIfArray = require("./helpers/checkIfArray");
 
-module.exports = function customUnshift(arr, value) {
+const customUnshift = function(arr, value) {
+  checkIfArray(arr)
+
   if (!arr.length) {
     arr[0] = value;
     return 1;
@@ -25,3 +15,5 @@ module.exports = function customUnshift(arr, value) {
   arr[0] = value;
   return arr.length;
 }
+
+module.exports = customUnshift;

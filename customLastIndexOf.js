@@ -29,4 +29,4 @@ const customLastIndexOf = function(arr, value, startIndex = 0) {
   else return -1
 }
 
-module.exports = customLastIndexOf
+module.exports = customLastIndexOf;

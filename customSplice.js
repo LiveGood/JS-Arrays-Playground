@@ -1,9 +1,5 @@
 
-
-// let arr = ['January', 'March', 'April', 'May', 'June', 'July', 'August'];
-
-// TODO: How to remove an element from an array with custom methods
-// 1. delete 
+// TODO: FIX THIS TOTAL MESS!
 
 const getOriginalArray= () => {
   return [1, 2, 3, 4, 5];

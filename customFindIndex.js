@@ -7,8 +7,8 @@ const customFindIndex = function(arr, cb, thisArg) {
     if (cb(arr[i], i)) return i;
   }
 
-  // will return undefined anway but explicit return reads better
+  // will return undefined anyway but explicit return reads better
   return undefined;
 }
 
-module.exports = customFindIndex
+module.exports = customFindIndex;

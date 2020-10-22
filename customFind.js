@@ -11,4 +11,4 @@ const customFind = function(arr, cb, thisArg) {
   return undefined;
 }
 
-s = customFind
+module.exports = customFind;

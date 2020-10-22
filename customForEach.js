@@ -8,4 +8,5 @@ const customForEach = function(arr, cb, thisArg) {
   }
 }
 
-module.exports = customForEach
+module.exports = customForEach;
+

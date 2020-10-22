@@ -10,4 +10,4 @@ const customSome = function(arr, cb, thisArg) {
   return false;
 }
 
-module.exports = customSome
+module.exports = customSome;

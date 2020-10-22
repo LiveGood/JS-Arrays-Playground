@@ -1,10 +1,9 @@
-const contextProvider = require("./helpers/contextProvider");
+const checkIfArray = require("./helpers/checkIfArray");
 
 const customJoin = function(arr, str) {
+  checkIfArray(arr)
+  
   let returnStr = "";
-  if (!Array.isArray(arr)) {
-    throw new TypeError(`${arr} is not an array.`)
-  }
   if (!arr.length) {
     return returnStr;
   }
@@ -20,4 +19,4 @@ const customJoin = function(arr, str) {
   return returnStr;
 }
 
-module.exports = customJoin
+module.exports = customJoin;

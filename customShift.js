@@ -1,6 +1,8 @@
 const checkIfArray = require("./helpers/checkIfArray");
 
-module.exports = function customShift(arr) {
+const customShift = function(arr) {
   checkIfArray(arr)
   return arr.slice(1);
 }
+
+module.exports = customShift;
