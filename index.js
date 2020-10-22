@@ -1,6 +1,15 @@
 
-// TODO: Add sort, reduce, reduceRight, reverse, flat, flatMap, fill
+// TODO: Add sort, reduce, reduceRight, flat, flatMap, fill
 // TODO: Fix splice
+/* TODO: Add my own: 
+    insert -> add element at an index 
+    findAll -> get all indexes of given value
+    compact -> remove all falsy values
+    drop -> remove many items from the beggining
+    dropRight -> remove many items from the end   
+    head -> return first index
+    nth -> get element of an array, possible if negative
+*/
 const _ = {
   entries: require('./customEntries'),
   every: require('./customEvery'),
@@ -21,7 +30,8 @@ const _ = {
   slice: require('./customSlice'),
   unshift: require('./customUnshift'),
   values: require('./customValues'),
-  removeAtIndex: require('./removeAtIndex')
+  removeAtIndex: require('./removeAtIndex'),
+  reverse: require('./customReverse')
 }
 
 module.exports = _ 
