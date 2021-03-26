@@ -11,10 +11,4 @@ const customReduce = function(arr, cb, initial) {
   return result;
 }
 
-
-let arr = [1, 2, 3];
-const result = customReduce(arr, (prev, val) => {
-  return prev + val;
-}, 0);
-
-console.log(result);
+module.exports = customReduce;
