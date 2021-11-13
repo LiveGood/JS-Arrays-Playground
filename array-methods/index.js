@@ -1,5 +1,5 @@
 
-// TODO: Add sort, reduce, reduceRight, flat, flatMap, fill
+// TODO: Add sort, reduceRight, flat, flatMap, fill
 // TODO: Fix splice
 /* TODO: Add my own: 
     insert -> add element at an index 

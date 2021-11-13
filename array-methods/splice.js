@@ -6,7 +6,7 @@ const getOriginalArray= () => {
 }
 let arr = getOriginalArray()
 arr.removeAtIndex(2)
-arr.removeAtIndex(2, true)
+arr.removeAtIndex(2)
 
 // TODO: Finish this mess!
 Array.prototype.customSplice = function(start, removeN) {
@@ -15,19 +15,19 @@ Array.prototype.customSplice = function(start, removeN) {
   let removedElementsArray = [];
 
   // Done: If If their is no addition of new values
-    // Done: If start is bigger then .length -> []
-    // Done: removeN > this.length - start
+  // Done: If start is bigger then .length -> []
+  // Done: removeN > this.length - start
   // If their is addition of new values
     // If the number of new values is shorted then length-start
     // If the added values is bigger then length-start => Only add
     // If end is bigger then length
   if (!concatValues.length) {
-    if (start > this.length) return []
+    if (start > this.length) return removedElementsArray;
     if (removeN >= this.length - start) removeLength = this.length - start
-    // removeN is shortern then the array.length - start
+    // removeN is shorter then the array.length - start
     while (removeLength > 0) {
       removedElementsArray.push(this[start]);
-      this.removeAtIndex(start, true)
+      this.removeAtIndex(start);
       removeLength--;
     }
 
