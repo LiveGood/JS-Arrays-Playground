@@ -1,4 +1,4 @@
-const contextProvider = require("./helpers/contextProvider");
+const contextProvider = require("../helpers/contextProvider");
 
 const customSome = function(arr, cb, thisArg) {
   cb = contextProvider(arr, cb, thisArg)

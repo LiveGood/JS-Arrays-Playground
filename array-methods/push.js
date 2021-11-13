@@ -1,4 +1,4 @@
-const checkIfArray = require("./helpers/checkIfArray");
+const checkIfArray = require("../helpers/checkIfArray");
 
 const push = function(arr, newItem) {
   checkIfArray(arr)

@@ -6,12 +6,8 @@ const getOriginalArray= () => {
 }
 let arr = getOriginalArray()
 arr.removeAtIndex(2)
-// console.log(arr);
 arr.removeAtIndex(2, true)
-// console.log(arr);
 
-// [1, 2, 3, 4, 5, 6]
-// (1, 2, 'Added1', 'Added2')
 // TODO: Finish this mess!
 Array.prototype.customSplice = function(start, removeN) {
   const concatValues = Array.from(arguments).slice(2);
@@ -93,7 +89,3 @@ testResults.forEach((result, index) => {
   console.log(`Correct: ${equal}`);
   console.log('----------------------');
 })
-
-
-
-

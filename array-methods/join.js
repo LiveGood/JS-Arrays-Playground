@@ -1,4 +1,4 @@
-const checkIfArray = require("./helpers/checkIfArray");
+const checkIfArray = require("../helpers/checkIfArray");
 
 const customJoin = function(arr, str) {
   checkIfArray(arr)

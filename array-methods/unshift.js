@@ -1,4 +1,4 @@
-const checkIfArray = require("./helpers/checkIfArray");
+const checkIfArray = require("../helpers/checkIfArray");
 
 const customUnshift = function(arr, value) {
   checkIfArray(arr)

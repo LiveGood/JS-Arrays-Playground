@@ -5,7 +5,7 @@
     insert -> add element at an index 
     findAll -> get all indexes of given value
     compact -> remove all falsy values
-    drop -> remove many items from the beggining
+    drop -> remove many items from the beginning
     dropRight -> remove many items from the end   
     head -> return first index
     nth -> get element of an array, possible if negative

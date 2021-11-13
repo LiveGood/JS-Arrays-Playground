@@ -1,4 +1,4 @@
-const contextProvider = require("./helpers/contextProvider");
+const contextProvider = require("../helpers/contextProvider");
 
 const customForEach = function(arr, cb, thisArg) {
   cb = contextProvider(arr, cb, thisArg)
@@ -9,4 +9,3 @@ const customForEach = function(arr, cb, thisArg) {
 }
 
 module.exports = customForEach;
-
