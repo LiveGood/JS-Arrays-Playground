@@ -9,7 +9,7 @@ const removeAtIndex = function(arr, index, makeShorter = true) {
     return;
   }
 
-  // 1. Move all elements values with one 
+  // 1. Move all elements from index values with one back
   // 2. Remove the last element
   // Equals: Element at index is removed
   for(let i = index; i < arr.length; i++) {
