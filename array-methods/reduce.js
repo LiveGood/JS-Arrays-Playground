@@ -5,22 +5,25 @@ const customReduce = function(arr, cb, initial, passedContext) {
   checkIfArray(arr)
 
   const context = passedContext || this;
-  let index = 0;
-  function reduce(initial) {
-    const boundSelfCallback = cb.bind(context);
-    const nextElement = shift(arr);
-    console.log(arr);
+  const boundCallback = cb.bind(context);
 
-    return arr.length ? reduce(boundSelfCallback(initial, nextElement, index++)) : initial;
+  let index = -1;
+  function reduce(initial) {
+
+    if (arr.length) { 
+      const nextElement = shift(arr);
+      return reduce(boundCallback(initial, nextElement, ++index))
+    }
+
+    return initial;
   }
   return reduce(initial);
 };
 
-const arr = [1, 2, 3]
-const result = customReduce(arr, function (prev, next) {
-  return prev + next;
-}, 0, {is: 'this?'})
-
-console.log(result);
+// const arr = [1, 2, 3]
+// const result = customReduce(arr, function (prev, next, index) {
+//   return prev + next;
+// }, 0, {is: 'this?'})
+// console.log('res:', result);
 
 module.exports = customReduce;
