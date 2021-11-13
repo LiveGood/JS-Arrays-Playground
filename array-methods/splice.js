@@ -82,10 +82,10 @@ const areArraysEqual = function (arr1, arr2) {
   return arr1.every((value, index) => value == arr2[index])
 }
 
-testResults.forEach((result, index) => {
-  console.log(result[methods[0]]);
-  console.log(result[methods[1]]);
-  let equal = areArraysEqual(result[methods[0]], result[methods[1]])
-  console.log(`Correct: ${equal}`);
-  console.log('----------------------');
-})
+// testResults.forEach((result, index) => {
+//   console.log(result[methods[0]]);
+//   console.log(result[methods[1]]);
+//   let equal = areArraysEqual(result[methods[0]], result[methods[1]])
+//   console.log(`Correct: ${equal}`);
+//   console.log('----------------------');
+// })

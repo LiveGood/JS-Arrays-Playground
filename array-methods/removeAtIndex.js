@@ -18,8 +18,8 @@ const removeAtIndex = function(arr, index, makeShorter = true) {
   arr.length = arr.length - 1;
 }
 
-var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-removeAtIndex(arr, 10);
-console.log(arr);
+// var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// removeAtIndex(arr, 10);
+// console.log(arr);
 
 module.exports = removeAtIndex; 
