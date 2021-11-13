@@ -1,0 +1,12 @@
+{
+  "name": "array-playground",
+  "version": "1.0.0",
+  "description": "Make them all!",
+  "main": "index.js",
+  "repository": "git@github.com:LiveGood/JS-Arrays-Playground.git",
+  "author": "Deyan Dachev <fleshthps@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

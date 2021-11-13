@@ -1,11 +1,17 @@
 const checkIfArray = require("../helpers/checkIfArray");
-const shift = require('./shift')
+const shift = require('./shift');
+
 const customReduce = function(arr, cb, initial, passedContext) {
   checkIfArray(arr)
 
   const context = passedContext || this;
+  let index = 0;
   function reduce(initial) {
-    return arr.length ? reduce(cb.bind(passedContext)(initial, shift(arr))) : initial;
+    const boundSelfCallback = cb.bind(context);
+    const nextElement = shift(arr);
+    console.log(arr);
+
+    return arr.length ? reduce(boundSelfCallback(initial, nextElement, index++)) : initial;
   }
   return reduce(initial);
 };

@@ -1,3 +1,5 @@
-
 # folders
-tests/
+/node_modules
+
+# Files
+yarn-error.log
