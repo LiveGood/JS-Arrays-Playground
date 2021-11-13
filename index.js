@@ -1,6 +1,13 @@
 
-// TODO: Add sort, reduceRight, flat, flatMap, fill
+
 // TODO: Fix splice
+/* TODO: Add
+  sort,
+  reduceRight,
+  flat,
+  flatMap,
+  fill
+*/
 /* TODO: Add my own: 
     findAll -> get all indexes of given value
     DONE: compact -> remove all falsy values
@@ -9,6 +16,7 @@
     head -> return first index
     nth -> get element of an array, possible if negative
 */
+
 const _ = {
   entries: require('./array-methods/entries'),
   every: require('./array-methods/every'),
